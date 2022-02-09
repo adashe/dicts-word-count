@@ -3,14 +3,11 @@
 
 # put your code here.
 
-word_count = {}
-
-
-
 def count_words(file):
-    
-    """Opens a text file and counts each comma-separated word"""
 
+    """Opens a text file and counts each comma-separated word"""
+    
+    word_count = {}
     text = open(file)
     for line in text:
         line = line.rstrip()
@@ -21,5 +18,5 @@ def count_words(file):
     for word, count in word_count.items():
         print(word, count)
 
-# count_words('test.txt')
-count_words('twain.txt')
+count_words('test.txt')
+# count_words('twain.txt')
